@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste2</title>
+</head>
+<body>
+
+    <script>
+        // 2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.
+
+        function checkTexto(str) {
+            
+            const count = (str.toLowerCase().split('a').length - 1);
+
+            if (count > 0) {
+                console.log(`A letra 'a' apareceu ${count}x`);
+            } else {
+                console.log("A letra 'a' não apareceu nenhuma vez.");
+            }
+        }
+
+        // Exemplo de uso
+        checkTexto('Casa');
+
+    </script>
+
+
+    
+</body>
+</html>
